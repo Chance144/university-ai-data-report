@@ -1,6 +1,6 @@
-# Financing the University with Unique Data Archives
+# Financing the University with Unique Data Archives — Without Losing Control
 
-Static strategy report site for WSU Carson College of Business (September 2026).
+Static strategy briefing by **Andrew Perkins**, Chair and Professor of Marketing and International Business, Carson College of Business, Washington State University (September 2026).
 
 ## View locally
 
@@ -23,4 +23,4 @@ The `docs/` folder is GitHub Pages–ready (includes `.nojekyll`). Point Pages a
 - `docs/app.js` — sticky nav highlight, smooth scroll, collapsible appendix
 - `docs/.nojekyll` — disable Jekyll on GitHub Pages
 
-Prepared for Andrew Perkins · Not legal advice.
+Author: Andrew Perkins, WSU. Not legal advice. Dollar figures appear only when already published.
