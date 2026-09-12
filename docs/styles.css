@@ -111,9 +111,6 @@ a:hover { color: var(--accent-hover); }
   font-size: 0.95rem;
   font-weight: 600;
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: min(48vw, 360px);
 }
 
 .nav-toggle {
@@ -665,7 +662,11 @@ td a { word-break: break-word; }
   }
   .side-nav.open { transform: translateY(0); }
   .nav-toggle { display: inline-flex; align-items: center; gap: 0.35rem; }
-  .brand-title { max-width: min(55vw, 280px); }
+  .brand-title {
+    max-width: min(62vw, 280px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
   .do-dont { grid-template-columns: 1fr; }
   .holdings-grid { grid-template-columns: 1fr; }
   .main { padding: 1.5rem 1rem 3rem; }
