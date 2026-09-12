@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Financing the University with Unique Data Archives — Strategy Report</title>
+  <meta name="description" content="Strategy report for a public research university: become a data landlord—license access under retained title—not a seller disposing of the institution's memory. Prepared for Andrew Perkins, WSU Carson College of Business, September 2026." />
+  <meta name="author" content="Prepared for Andrew Perkins, WSU Carson College of Business" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Financing the University with Unique Data Archives" />
+  <meta property="og:description" content="Become a data landlord—license access under retained title—not a seller disposing of the institution's memory. Strategy report for public research universities. September 2026." />
+  <meta property="og:site_name" content="WSU Carson College of Business — Strategy Report" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Financing the University with Unique Data Archives" />
+  <meta name="twitter:description" content="Become a data landlord—license access under retained title—not a seller disposing of the institution's memory. Strategy report · September 2026." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&amp;family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400;1,500&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#top">
+      <span class="brand-kicker">Strategy Report · Sep 2026</span>
+      <span class="brand-title">University Data Archives &amp; AI</span>
+    </a>
+    <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="side-nav">Contents</button>
+  </header>
+  <div class="layout">
+    <nav class="side-nav" id="side-nav" aria-label="Report sections">
+      <h2>Contents</h2>
+      <ol>
+        <li><a href="#executive-summary">1. Executive summary</a></li>
+        <li><a href="#market-context">2. Market context</a></li>
+        <li><a href="#second-third-order">3. Second- &amp; third-order effects</a></li>
+        <li><a href="#local-models">4. Local open-source models</a></li>
+        <li><a href="#financing">5. Financing without losing control</a></li>
+        <li><a href="#restricted-data">6. Restricted data &amp; custody</a></li>
+        <li><a href="#recommendation">7. Integrated recommendation</a></li>
+        <li><a href="#open-questions">8. Open questions</a></li>
+        <li><a href="#appendix-a">Appendix A — Deal table</a></li>
+        <li><a href="#appendix-b">Appendix B — Sources</a></li>
+      </ol>
+    </nav>
+    <main class="main" id="main">
+      <article class="article" id="top">
+        <header class="hero">
+          <div class="hero-meta">
+            <span><strong>Prepared for</strong> Andrew Perkins, Chair, Department of Marketing and International Business</span>
+            <span><strong>Institution</strong> WSU Carson College of Business</span>
+            <span><strong>Date</strong> September 11, 2026</span>
+          </div>
+          <h1>Financing the University with Unique Data Archives</h1>
+          <p class="subtitle">Without Losing Control — Strategy Report for a Public Research University</p>
+          <p class="companion-note">Companion: Detailed buyer deal table and citations in the appendix (drawn from the September 2026 novel-data deep dive). Dollar figures appear only when reported by reputable sources; many deal values remain undisclosed.</p>
+        </header>
+        <aside class="thesis" aria-label="Core recommendation">
+          <span class="thesis-label">Core recommendation</span>
+          <p>Become a <strong>data landlord</strong> — license access under retained title and custody — not a seller disposing of the institution's memory.</p>
+        </aside>
+
+        <section class="report-section" id="executive-summary">
+          <h2>1. Executive summary</h2>
+          <p class="lede">Frontier AI labs are paying real money for <strong>novel data</strong>: rights-cleared archives, regenerating platform content, expert human feedback, multimodal and vertical corpora — not another scrape of the public web.</p>
+          <p>OpenAI has been the densest publisher licensor (News Corp reported at <strong>&gt;$250M over five years</strong>). Google pays for Reddit-scale UGC (<strong>~$60M/year</strong> reported; Reddit S-1 showed <strong>$203M</strong> aggregate data-licensing contract value). Amazon's New York Times license was reported at <strong>$20–25M/year</strong>. Meta spent <strong>$14.3B for 49% of Scale AI</strong>, buying the annotation/eval stack. Anthropic has largely avoided publisher licensing and instead paid a <strong>~$1.5B</strong> copyright settlement over pirated books — a risk signal as much as a market size signal.</p>
+          <p>Universities hold a parallel asset: <strong>unique archives and ongoing research production</strong> that often never appeared in Common Crawl. That asset can help <strong>finance the university</strong>. It can also hollow out the university's comparative advantage if sold carelessly.</p>
+          <p><strong>Recommendation in one line:</strong> Become a <strong>data landlord</strong> — license access under retained title and custody — not a seller disposing of the institution's memory.</p>
+          <div class="do-dont" role="group" aria-label="Do and don't summary">
+            <div class="do-dont-col do">
+              <h3>Do</h3>
+              <ul>
+                <li>Non-exclusive, time-boxed licenses on <strong>cleared</strong> subsets</li>
+                <li>Metered APIs, embeddings, LoRAs, clean-room training</li>
+                <li>Campus open-model + RAG for mission and leverage</li>
+                <li>Route revenue to digitization, fellows, archive staff</li>
+              </ul>
+            </div>
+            <div class="do-dont-col dont">
+              <h3>Don't</h3>
+              <ul>
+                <li>Perpetual, exclusive, sublicensable rights to the whole vault</li>
+                <li>Blind raw exports of restricted collections</li>
+                <li>Pretend each college will train a frontier model from scratch</li>
+                <li>Quiet one-time dump that funds nothing visible</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="report-section" id="market-context">
+          <h2>2. Market context: who pays for novel data</h2>
+          <h3>2.1 Categories of “novel” data labs buy</h3>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th>Category</th><th>Examples</th><th>Why it commands a price</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Licensed / exclusive content</td><td>News archives, stock media, paywalled specialty</td><td>Provenance, freshness, brand trust</td></tr>
+                <tr><td>Platform UGC (API, not scrape)</td><td>Reddit, Stack Overflow, X under ToS</td><td>Regenerating conversational supply</td></tr>
+                <tr><td>Expert human data</td><td>RLHF prefs, STEM/law/med demos, red teams</td><td>Post-training quality; hard to fake</td></tr>
+                <tr><td>Domain corpora</td><td>Code, science, law, medicine</td><td>Capability gaps scrapes don’t fill</td></tr>
+                <tr><td>Multimodal / robotics</td><td>Video, audio, teleop, sensors</td><td>World models; physical AI</td></tr>
+                <tr><td>Synthetic + human hybrid</td><td>Model-generated, human-filtered</td><td>Scale past human text stock</td></tr>
+                <tr><td>Private enterprise / on-device</td><td>Workflow logs, EHR (licensed B2B)</td><td>Differentiation</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <h3>2.2 Buyer snapshot (September 2026)</h3>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th>Buyer</th><th>Posture</th><th>Notable signals</th></tr>
+              </thead>
+              <tbody>
+                <tr><td><strong>OpenAI</strong></td><td>Most active publisher/platform licensor</td><td>News Corp &gt;$250M/5yr (reported); Dotdash ≥$16M/yr; Reddit; Stack Overflow; Shutterstock; FT; Axel Springer; many others</td></tr>
+                <tr><td><strong>Google / DeepMind</strong></td><td>Selective licenses + owned inventory (YouTube)</td><td>Reddit ~$60M/yr (reported); Stack Overflow; publisher pilots</td></tr>
+                <tr><td><strong>Anthropic</strong></td><td>Human feedback heavy; few public publisher licenses</td><td>Surge partnership; <strong>~$1.5B</strong> Bartz settlement (not a forward book license)</td></tr>
+                <tr><td><strong>Meta</strong></td><td>Annotation M&amp;A + news grounding</td><td><strong>$14.3B / 49% Scale</strong>; Reuters; News Corp up to ~$50M/yr (reported)</td></tr>
+                <tr><td><strong>Microsoft</strong></td><td>Training + Copilot grounding; academic</td><td>HarperCollins $5k/title opt-in; Informa/T&amp;F &gt;$10M initial</td></tr>
+                <tr><td><strong>Amazon</strong></td><td>Entered news licensing</td><td>NYT ~$20–25M/yr (WSJ-reported)</td></tr>
+                <tr><td><strong>Apple</strong></td><td>Quiet; licensed media</td><td>Shutterstock; AFM papers cite licensed publisher text</td></tr>
+                <tr><td><strong>xAI</strong></td><td>Structural firehose</td><td>X public posts (opt-out) + partners/contractors</td></tr>
+                <tr><td><strong>Vertical</strong></td><td>Highest $/scarcity</td><td>e.g. Tempus→Pathos oncology multimodal <strong>$200M / 3 yrs</strong> (SEC)</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p><strong>Where value accrues:</strong> rights-cleared aggregators, regenerating platforms, annotation infrastructure, vertical data companies — not most individual creators or low-wage annotators.</p>
+          <p class="note">Full named deal table with URLs and confidence tags: Appendix A.</p>
+        </section>
+
+        <section class="report-section" id="second-third-order">
+          <h2>3. Universities as potential sellers: second- and third-order effects</h2>
+          <h3>3.1 Why labs would care about university holdings</h3>
+          <p>Special collections, field notes, oral histories, lab notebooks, gray literature, extension reports, longitudinal local datasets, and digitized corpora often sit <strong>outside</strong> exhausted public crawl stocks — exactly the novelty premium described above.</p>
+          <h3>3.2 Second-order effects</h3>
+          <ol>
+            <li><strong>Archive becomes a P&amp;L asset</strong> — once one R1 licenses distinctive holdings, peers face pressure to monetize or accept a funding gap.</li>
+            <li><strong>Exclusivity concentration</strong> — labs pay more for exclusive rights; frontier capability clusters around who locked the corpus.</li>
+            <li><strong>Research and teaching go downstream of the license</strong> — colleagues access knowledge through the buyer’s model; replication and citation fray.</li>
+            <li><strong>Consent and provenance crises</strong> — donor restrictions, student work, Indigenous materials, unpublished and clinical-adjacent content collide with institutional sales.</li>
+            <li><strong>Curation incentives shift</strong> — digitization follows AI buyer demand (clean STEM English multimodal) over scholarly or community need.</li>
+            <li><strong>Broker power rises</strong> — consortia, presses, and data trusts set terms; individual faculty lose voice.</li>
+          </ol>
+          <h3>3.3 Third-order effects</h3>
+          <ol>
+            <li><strong>Institutional stratification</strong> — archive-rich universities become data landlords; others become customers of models trained on peers’ heritage.</li>
+            <li><strong>Epistemic capture</strong> — the academy outsources comparative advantage and buys it back as API “reasoning.”</li>
+            <li><strong>Public-mission backlash</strong> — patchwork regulation, non-exclusivity mandates, bans on selling certain classes of public-university holdings.</li>
+            <li><strong>Research design for saleability</strong> — questions and repositories optimized for future relicensing.</li>
+            <li><strong>Dual-use and cultural-harm exposure</strong> once bits leave campus governance.</li>
+            <li><strong>Premium decay</strong> — early sellers earn rents; one-time vault dumps commoditize; durable value is <strong>regenerating streams</strong>.</li>
+            <li><strong>Trust inversion</strong> — donor/community trust vs. AI-industry prestige.</li>
+          </ol>
+        </section>
+
+        <section class="report-section" id="local-models">
+          <h2>4. Should universities train local open-source models on their archives?</h2>
+          <h3>4.1 Short answer</h3>
+          <div class="short-answer">
+            <p><strong>Yes</strong> to local open weights + RAG (+ light LoRA) on a university platform.<br />
+            <strong>No</strong> to from-scratch or full continued pretrain of a frontier-scale model per college.</p>
+          </div>
+          <h3>4.2 When local open models make sense</h3>
+          <ul>
+            <li>The archive’s value is <strong>retrieval and grounded assistance</strong>, not pretraining mass (most university collections are tiny vs. internet-scale pretraining).</li>
+            <li><strong>Governance is the product</strong> — donor, FERPA-adjacent, Indigenous, and sealed materials that must not leave campus.</li>
+            <li><strong>Mission tooling</strong> — college-specific assistants (e.g., business, ag, vet med) that cite institutional holdings beat a generic chatbot for daily work.</li>
+            <li><strong>Bargaining chip</strong> — demonstrated local capability strengthens “we need not sell” leverage.</li>
+          </ul>
+          <h3>4.3 When it does not</h3>
+          <ul>
+            <li>Training a competitive general model from scratch (compute + MLOps + eval + safety dwarf the archive’s token count).</li>
+            <li>“One model per college” as an org chart (fragmented cost); prefer <strong>one university AI platform</strong> with per-college indexes, adapters, and ACLs.</li>
+            <li>Assuming “open-source model” erases copyright or donor constraints — it does not.</li>
+          </ul>
+          <h3>4.4 Recommended architecture</h3>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Layer</th><th>Role</th></tr></thead>
+              <tbody>
+                <tr><td>Base model</td><td>Strong open weights, upgraded on a cadence</td></tr>
+                <tr><td>Knowledge</td><td>Per-college / per-collection vector + metadata indexes (ACL’d)</td></tr>
+                <tr><td>Adaptation</td><td>Small LoRA adapters per school or center</td></tr>
+                <tr><td>Interface</td><td>Chat with citations into finding aids / PDFs; SSO; audit logs</td></tr>
+                <tr><td>Eval</td><td>Domain exams, citation fidelity, refusals on red classes</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>Optional: land-grant / Big Ten <strong>methods and base weights</strong> shared; <strong>raw archives</strong> stay local.</p>
+        </section>
+
+        <section class="report-section" id="financing">
+          <h2>5. Financing the university without losing control</h2>
+          <h3>5.1 Principle</h3>
+          <div class="callout">
+            <p><strong>Never sell the corpus.</strong> License <strong>narrow rights</strong>. Keep <strong>canonical raw data on university-controlled infrastructure</strong>. Prefer money that scales with <strong>time or use</strong> while title stays with the institution.</p>
+          </div>
+          <h3>5.2 Monetization models that preserve control</h3>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th>Model</th><th>What the buyer gets</th><th>What you keep</th><th>Finance shape</th></tr>
+              </thead>
+              <tbody>
+                <tr><td><strong>Non-exclusive time-boxed training license</strong></td><td>Right to train for N years on a defined <strong>green</strong> slice</td><td>Title; ability to license others; expiry/renewal</td><td>Multi-year annuity</td></tr>
+                <tr><td><strong>Inference / grounding license</strong></td><td>Retrieval + citation into products</td><td>Raw archive never exported</td><td>Metered usage or revenue share</td></tr>
+                <tr><td><strong>Clean-room / enclave training</strong></td><td>Training job runs where data already lives; adapters/metrics may leave</td><td>Raw files stay put</td><td>Capacity + license fee (price the friction)</td></tr>
+                <tr><td><strong>Derivatives-only</strong></td><td>Embeddings, synthetic twins, evals, LoRAs you produced</td><td>Underlying PDFs/databases</td><td>Product/API subscriptions</td></tr>
+                <tr><td><strong>Consortium / data trust</strong></td><td>Non-exclusive access via collective terms</td><td>Shared standards; no single-lab exclusivity across system</td><td>Larger checks; shared legal cost</td></tr>
+                <tr><td><strong>Cash + campus benefits</strong></td><td>License + seats/compute/API credits</td><td>Same contractual limits</td><td>Budget relief against AI spend</td></tr>
+                <tr><td><strong>Refresh streams</strong></td><td>Ongoing new papers, extension outputs, curated datasets</td><td>Vault + future production</td><td>Recurring ops funding</td></tr>
+                <tr><td><strong>Internal cost recovery</strong></td><td>Campus colleges pay for hosted assistant</td><td>Full control</td><td>Margin + political cover</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <h3>5.3 Control killers (refuse)</h3>
+          <div class="killers">
+            <h4>Refuse these terms</h4>
+            <ul>
+              <li>Perpetual, worldwide, sublicensable training rights</li>
+              <li>Exclusive forever (or exclusive without enormous premium + kill switch)</li>
+              <li>Permanent raw retention with no deletion escrow</li>
+              <li>“All future faculty/student work” bundled into one grant</li>
+              <li>Restricted donor / Indigenous / student / clinical-adjacent classes without separate consent regimes</li>
+            </ul>
+          </div>
+          <h3>5.4 Contract kit</h3>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Clause</th><th>Purpose</th></tr></thead>
+              <tbody>
+                <tr><td>Title retained</td><td>License ≠ assignment</td></tr>
+                <tr><td>Field-of-use split</td><td>Train vs display vs eval — price separately</td></tr>
+                <tr><td>Non-exclusive (or short exclusive window)</td><td>Avoid permanent landlordship by one lab</td></tr>
+                <tr><td>No raw retention / certified deletion</td><td>Escrow + audit</td></tr>
+                <tr><td>Attribution / output rules</td><td>Brand and provenance</td></tr>
+                <tr><td>Ethics carve-outs</td><td>Red collections ineligible</td></tr>
+                <tr><td>Research license back</td><td>Faculty model access / eval hooks</td></tr>
+                <tr><td>Termination for breach or reputational harm</td><td>Regents off-ramp</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <h3>5.5 How a CFO / regent hears it</h3>
+          <ol>
+            <li><strong>Near-term cash</strong> — 2–3 non-exclusive deals on cleared subsets.</li>
+            <li><strong>Recurring ops</strong> — API meters + renewals on streams.</li>
+            <li><strong>Cost avoidance</strong> — seats and compute credits vs. campus AI spend.</li>
+            <li><strong>Balance sheet</strong> — intangible asset retained; revenue is licensing income, not asset disposal.</li>
+            <li><strong>Political cover</strong> — publish a Data Stewardship Policy first: <em>we license access; we do not sell the university’s memory.</em> Route visible revenue to digitization, fellowships, and archive staffing.</li>
+          </ol>
+          <h3>5.6 Twelve-month sequence</h3>
+          <ol class="sequence">
+            <li>Inventory what is uniquely valuable <strong>and</strong> clearable.</li>
+            <li>Tier <strong>green / yellow / red</strong>.</li>
+            <li>Stand up local RAG + audit logging (proves you can host).</li>
+            <li>RFP to 2–3 labs: non-exclusive, ~3-year, no raw retention, campus benefits.</li>
+            <li>Ring-fence revenue for mission-visible uses.</li>
+          </ol>
+        </section>
+
+        <section class="report-section" id="restricted-data">
+          <h2>6. “How can they train on restricted data without us giving it to them?”</h2>
+          <h3>6.1 The honest distinction</h3>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Claim</th><th>Reality</th></tr></thead>
+              <tbody>
+                <tr><td>“They never got a copy of our files”</td><td>Possible via enclave or “we train, they buy the adapter”</td></tr>
+                <tr><td>“They never learned from restricted data”</td><td><strong>False</strong> if they trained or fine-tuned on it</td></tr>
+                <tr><td>“The model can’t leak restricted content”</td><td><strong>Not guaranteed</strong> — need DP/filtering/memorization evals</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="callout">
+            <p><strong>Training always uses the data.</strong> Custody of the archive and secrecy of contents are different problems.</p>
+          </div>
+          <h3>6.2 Patterns explained simply</h3>
+          <div class="pattern-grid">
+            <div class="pattern">
+              <h4>A. Normal license (most OpenAI/Anthropic-style media deals)</h4>
+              <p>You transfer or feed a corpus; they store it on their clusters. Control is <strong>contractual</strong>, not physical.</p>
+            </div>
+            <div class="pattern">
+              <h4>B. Clean room / enclave</h4>
+              <p>Data stays on university (or co-managed) machines. Their training code runs <em>there</em>. Gradients or a fine-tune adapter may leave; the recipe box stays in your kitchen. Solves <strong>custody</strong>; does not erase <strong>memorization risk in weights</strong>.</p>
+            </div>
+            <div class="pattern">
+              <h4>C. You train; they buy the derivative</h4>
+              <p>Campus produces a LoRA, embedding index, or API. Labs never receive raw restricted files. Cleanest story for red/yellow data.</p>
+            </div>
+            <div class="pattern">
+              <h4>D. RAG only (not training)</h4>
+              <p>Answers retrieve snippets at runtime. Weights aren’t trained on the vault; exposure risk still exists via retrieved text. Different tool.</p>
+            </div>
+          </div>
+          <h3>6.3 What labs will push for</h3>
+          <p>Simple copyable corpora on <strong>their</strong> GPUs. Clean-room is negotiable for regulated settings but is friction — <strong>price it</strong> and require it for yellow data. For red data, prefer <strong>no external training at all</strong>.</p>
+          <h3>6.4 Tiered rule of thumb</h3>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Tier</th><th>Pattern</th></tr></thead>
+              <tbody>
+                <tr><td><span class="tier-green">Green</span> (cleared, donor-OK)</td><td>Non-exclusive license; controlled export OK</td></tr>
+                <tr><td><span class="tier-yellow">Yellow</span> (sensitive but valuable)</td><td>Enclave fine-tune <strong>or</strong> campus-produced LoRA/embeddings only</td></tr>
+                <tr><td><span class="tier-red">Red</span> (student, clinical-adjacent, Indigenous-restricted, sealed)</td><td>No external training; campus RAG only or aggregates only</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="report-section" id="recommendation">
+          <h2>7. Integrated recommendation (public land-grant shaped)</h2>
+          <ol>
+            <li><strong>Policy first</strong> — stewardship policy + green/yellow/red inventory before any term sheet.</li>
+            <li><strong>Build the campus stack</strong> — open weights + RAG + ACLs + audit (mission value + negotiating leverage).</li>
+            <li><strong>Monetize green streams and cleared subsets</strong> — non-exclusive, time-boxed, deletion/audit, campus benefits.</li>
+            <li><strong>Yellow only under enclave or derivative-only structures.</strong></li>
+            <li><strong>Red never trains off-campus.</strong></li>
+            <li><strong>Prefer consortia</strong> for price and standards when dealing with frontier labs.</li>
+            <li><strong>Measure success</strong> as recurring licensing income <strong>plus</strong> retained custody <strong>plus</strong> improved teaching/research tools — not as a one-time sale record.</li>
+          </ol>
+          <p class="closing-line">The institutions that win financially without hollowing themselves out will look like <strong>publishers who renewed</strong>, not like <strong>libraries that liquidated</strong>.</p>
+        </section>
+
+        <section class="report-section" id="open-questions">
+          <h2>8. Open questions for WSU leadership</h2>
+          <ol>
+            <li>What holdings are truly non-substitutable vs. approximable from the public web?</li>
+            <li>Who owns decision rights — Libraries, OR, colleges, system counsel, regents?</li>
+            <li>Is the primary goal cash, cost avoidance (AI seats), research partnerships, or political positioning?</li>
+            <li>Exclusive short window vs. permanent non-exclusivity — which matches land-grant mission?</li>
+            <li>Should Carson College / Extension / Libraries pilot green-tier licensing together or separately?</li>
+            <li>What regeneration streams (working papers, extension, local datasets) can be productized within 12 months?</li>
+          </ol>
+        </section>
+
+        <section class="report-section" id="appendix-a">
+          <button type="button" class="appendix-toggle" data-collapse-toggle aria-expanded="true" aria-controls="appendix-a-body" id="appendix-a-btn">
+            Appendix A — Named AI novel-data deals
+            <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="appendix-body" id="appendix-a-body">
+            <p class="note">Only include $ when reported by a named primary or reputable outlet. “Undisclosed” means companies did not publish terms.</p>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Buyer</th><th>Seller</th><th>Data type / scope</th>
+                    <th>$ (if known)</th><th>Date</th><th>Source</th><th>Conf.</th>
+                  </tr>
+                </thead>
+                <tbody>
+<tr><td>Google</td><td>Reddit</td><td>Data API for AI model training</td><td>~<strong>$60M/year</strong> (source-reported)</td><td>Feb 2024</td><td><a href="https://www.reuters.com/technology/reddit-ai-content-licensing-deal-with-google-sources-say-2024-02-22/" target="_blank" rel="noopener">Reuters</a></td><td><span class="badge badge-medium">Medium</span></td></tr><tr><td>Multiple (incl. Google)</td><td>Reddit</td><td>Aggregate data licensing contracts</td><td><strong>$203.0M</strong> aggregate contract value; ≥$66.4M recognized in 2024</td><td>Jan 2024 (S-1)</td><td><a href="https://techcrunch.com/2024/02/22/reddit-says-its-made-203m-so-far-licensing-its-data/" target="_blank" rel="noopener">TechCrunch on Reddit S-1</a></td><td><span class="badge badge-high">High</span></td></tr><tr><td>OpenAI</td><td>Reddit</td><td>Real-time Data API → ChatGPT + AI features; Reddit uses OpenAI models; OpenAI ads on Reddit</td><td>Official: undisclosed. Secondary estimates ~$70M/yr are <strong>arithmetic inferences</strong>, not company disclosure</td><td>May 2024</td><td><a href="https://openai.com/index/openai-and-reddit-partnership/" target="_blank" rel="noopener">OpenAI post</a>; <a href="https://techcrunch.com/2024/05/16/openai-inks-deal-to-train-ai-on-reddit-data/" target="_blank" rel="noopener">TechCrunch</a></td><td><span class="badge badge-mixed">High (deal) / Low ($)</span></td></tr><tr><td>OpenAI</td><td>News Corp</td><td>Current + archive news (WSJ, NY Post, Times/Sun, Australian titles, etc.); display + training; HarperCollins <strong>excluded</strong></td><td><strong>&gt;$250M over 5 years</strong> (cash + OpenAI credits), per people familiar</td><td>May 2024</td><td><a href="https://archive.ph/D51ae" target="_blank" rel="noopener">WSJ via archive</a>; <a href="https://investors.newscorp.com/news-releases/news-release-details/news-corp-and-openai-sign-landmark-multi-year-global-partnership" target="_blank" rel="noopener">News Corp release</a>; <a href="https://apnews.com/article/openai-news-corp-a49144d381796df5729c746f52fbef19" target="_blank" rel="noopener">AP</a></td><td><span class="badge badge-medium">Medium–High</span></td></tr><tr><td>OpenAI</td><td>Dotdash Meredith (IAC)</td><td>Lifestyle brands (People, Investopedia, etc.); training + display</td><td><strong>≥~$16M/year fixed</strong> (+ variable, not yet fully recognized)</td><td>May 2024 deal; Nov 2024 IAC disclosure</td><td><a href="https://www.adweek.com/media/openai-dotdash-meredith-licensing-payment/" target="_blank" rel="noopener">Adweek</a>; <a href="https://www.theverge.com/2024/11/18/24300144/openai-is-paying-dotdash-meredith-at-least-16-million-a-year-to-license-its-content-for-ai" target="_blank" rel="noopener">The Verge</a></td><td><span class="badge badge-high">High</span></td></tr><tr><td>OpenAI</td><td>Axel Springer</td><td>Politico, BI, Bild, Welt; training + ChatGPT display</td><td><strong>“Tens of millions of euros”/yr</strong> (Bloomberg/FT-reported)</td><td>Dec 2023</td><td><a href="https://the-decoder.com/axel-springer-and-openai-license-agreement-is-worth-tens-of-millions-of-euros-per-year/" target="_blank" rel="noopener">The Decoder summarizing FT/Bloomberg</a></td><td><span class="badge badge-medium">Medium</span></td></tr><tr><td>OpenAI</td><td>Financial Times</td><td>Archive + attributed summaries/quotes/links; model usefulness</td><td>Undisclosed (secondary estimates $5–10M/yr — treat as <strong>unconfirmed</strong>)</td><td>Apr 2024</td><td><a href="https://openai.com/index/content-partnership-with-financial-times/" target="_blank" rel="noopener">OpenAI</a>; <a href="https://www.niemanlab.org/2024/04/the-financial-times-inks-new-licensing-deal-with-openai/" target="_blank" rel="noopener">Nieman Lab</a></td><td><span class="badge badge-mixed">High (deal) / Low ($)</span></td></tr><tr><td>OpenAI</td><td>Stack Overflow</td><td>OverflowAPI; improve models; attributed answers in ChatGPT</td><td>Undisclosed</td><td>May 2024</td><td><a href="https://openai.com/index/api-partnership-with-stack-overflow/" target="_blank" rel="noopener">OpenAI</a></td><td><span class="badge badge-high">High</span></td></tr><tr><td>OpenAI</td><td>Shutterstock</td><td>Images, video, music + metadata; 6-year expansion</td><td>Per-customer Big Tech deals initially <strong>$25–50M</strong> each (CFO to Reuters); SSTK AI licensing revenue ~<strong>$104M in 2023</strong> across all AI customers</td><td>Jul 2023 expansion; Apr 2024 Reuters</td><td><a href="https://investor.shutterstock.com/news-releases/news-release-details/shutterstock-expands-partnership-openai-signs-new-six-year" target="_blank" rel="noopener">Shutterstock IR</a>; <a href="https://www.reuters.com/technology/inside-big-techs-underground-race-buy-ai-training-data-2024-04-05/" target="_blank" rel="noopener">Reuters</a></td><td><span class="badge badge-medium">Medium–High</span></td></tr><tr><td>OpenAI</td><td>Associated Press</td><td>Archive back to 1985 (reported)</td><td>Undisclosed</td><td>Jul 2023</td><td>Multiple secondary; treat $ as unknown</td><td><span class="badge badge-high">High (existence)</span></td></tr><tr><td>OpenAI</td><td>Axios</td><td>Content + funds 4 Axios Local newsrooms (3 yrs)</td><td>Undisclosed</td><td>Jan 2025</td><td>Secondary compilations; confirm via Axios/OpenAI announcements</td><td><span class="badge badge-medium">Medium</span></td></tr><tr><td>OpenAI</td><td>Washington Post / Guardian</td><td>Primarily display/summaries/links for ChatGPT Search (training scope less clear than early deals)</td><td>Undisclosed</td><td>2025</td><td><a href="https://digiday.com/media/media-briefing-what-the-washington-posts-deal-with-openai-says-about-the-future-of-ai-content-licensing/" target="_blank" rel="noopener">Digiday on WaPo</a></td><td><span class="badge badge-medium">Medium</span></td></tr><tr><td>Google</td><td>Stack Overflow</td><td>OverflowAPI → Gemini / Google Cloud coding assistance; attribution</td><td>Undisclosed</td><td>Early 2024</td><td><a href="https://www.wired.com/story/google-deal-stackoverflow-ai-giants-pay-for-data/" target="_blank" rel="noopener">WIRED</a></td><td><span class="badge badge-high">High</span></td></tr><tr><td>Google</td><td>Associated Press</td><td>Real-time feed into Gemini</td><td>Undisclosed</td><td>Jan 2025</td><td>Secondary compilations</td><td><span class="badge badge-medium">Medium</span></td></tr><tr><td>Google</td><td>~20 news outlets</td><td>Licensing <strong>pilot / talks</strong></td><td>Unknown</td><td>Jul 2025</td><td><a href="https://www.bloomberg.com/news/articles/2025-07-22/google-seeks-licensing-talks-with-news-groups-following-ai-rivals" target="_blank" rel="noopener">Bloomberg</a></td><td><span class="badge badge-medium">Medium (talks ≠ closed)</span></td></tr><tr><td>Meta / Google / Amazon / Apple</td><td>Shutterstock</td><td>Hundreds of millions of images/video/music for training</td><td>Initially <strong>$25–50M each</strong>; most later expanded (CFO)</td><td>2022–2024</td><td><a href="https://www.reuters.com/technology/inside-big-techs-underground-race-buy-ai-training-data-2024-04-05/" target="_blank" rel="noopener">Reuters</a>; <a href="https://www.theverge.com/2024/4/6/24123078/shutterstock-made-ai-training-deals-with-everyone-apparently" target="_blank" rel="noopener">The Verge</a></td><td><span class="badge badge-medium">Medium</span></td></tr><tr><td>Amazon</td><td>New York Times</td><td>NYT + Cooking + Athletic; Alexa display + <strong>train proprietary FMs</strong></td><td><strong>$20–25M/year</strong> (WSJ sources)</td><td>May 2025</td><td><a href="https://investors.nytco.com/news-and-events/press-releases/news-details/2025/The-New-York-Times-Company-and-Amazon-Announce-Licensing-Agreement--2025-cYgtzu69ot/default.aspx" target="_blank" rel="noopener">NYT Co. release</a>; <a href="https://www.wsj.com/business/media/amazon-to-pay-new-york-times-at-least-20-million-a-year-in-ai-deal-66db8503" target="_blank" rel="noopener">WSJ</a>; <a href="https://www.reuters.com/business/retail-consumer/new-york-times-amazon-sign-ai-licensing-deal-2025-05-29/" target="_blank" rel="noopener">Reuters</a></td><td><span class="badge badge-mixed">High (deal) / Medium ($)</span></td></tr><tr><td>Microsoft</td><td>HarperCollins</td><td>Select nonfiction; author <strong>opt-in</strong>; 3 years; output caps (≤200 consecutive words and/or 5% of text)</td><td><strong>$5,000 per title</strong>, split 50/50 publisher/author</td><td>Nov 2024</td><td><a href="https://www.emarketer.com/content/microsoft-harpercollins-sign-ai-licensing-deal--author-opt-in-still-required" target="_blank" rel="noopener">eMarketer</a>; <a href="https://www.transparencycoalition.ai/news/harpercollins-ai-deal-with-microsoft-sets-first-public-price-for-training-data" target="_blank" rel="noopener">Transparency Coalition</a></td><td><span class="badge badge-high">High</span></td></tr><tr><td>Microsoft</td><td>Informa (Taylor &amp; Francis)</td><td>“Advanced Learning Content” across ~3,000 journals; AI innovation partnership</td><td><strong>&gt;$10M</strong> initial access; recurring 3 years; Informa guided AI-related revenues <strong>&gt;$75M</strong> for 2024 across partnerships</td><td>May 2024</td><td><a href="https://www.insidehighered.com/news/faculty/research/2024/07/29/taylor-francis-ai-deal-sets-worrying-precedent" target="_blank" rel="noopener">Inside Higher Ed</a>; <a href="https://theconversation.com/an-academic-publisher-has-struck-an-ai-data-deal-with-microsoft-without-their-authors-knowledge-235203" target="_blank" rel="noopener">The Conversation</a></td><td><span class="badge badge-high">High</span></td></tr><tr><td>Meta</td><td>Reuters</td><td>Multiyear; Meta AI chatbot news answers + links</td><td>Undisclosed</td><td>Oct 2024</td><td><a href="https://www.theverge.com/2024/10/25/24279259/meta-reuters-ai-chatbot-deal-news-licensing-media" target="_blank" rel="noopener">The Verge</a></td><td><span class="badge badge-high">High</span></td></tr><tr><td>Meta</td><td>News Corp</td><td>US/UK content for chatbot + <strong>model training</strong></td><td>Up to <strong>~$50M/year</strong>, ≥3 years (WSJ/Guardian/NY Post reporting)</td><td>Mar 2026</td><td><a href="https://www.theguardian.com/media/2026/mar/04/news-corp-meta-ai-deal-us50m" target="_blank" rel="noopener">The Guardian</a>; <a href="https://nypost.com/2026/03/04/business/news-corp-strikes-50m-per-year-ai-licensing-deal-with-meta/" target="_blank" rel="noopener">NY Post</a>; <a href="https://www.engadget.com/ai/meta-signs-a-multimillion-dollar-ai-licensing-deal-with-news-corp-234157902.html" target="_blank" rel="noopener">Engadget</a></td><td><span class="badge badge-medium">Medium</span></td></tr><tr><td>Meta</td><td>Scale AI</td><td>49% stake; strategic partnership; Alexandr Wang → Meta “superintelligence”</td><td><strong>$14.3B</strong> investment; Scale valued <strong>&gt;$29B</strong></td><td>Jun 2025</td><td><a href="https://apnews.com/article/meta-ai-superintelligence-agi-scale-alexandr-wang-4b55aabf7ea018e38ffdccb66e37cf26" target="_blank" rel="noopener">AP</a>; <a href="https://www.reuters.com/business/media-telecom/metas-scale-ai-stake-buyout-spotlights-other-major-deals-amid-regulatory-risks-2025-06-13/" target="_blank" rel="noopener">Reuters</a></td><td><span class="badge badge-high">High</span></td></tr><tr><td>Pathos AI</td><td>Tempus AI</td><td>De-identified multimodal oncology dataset license for foundational model</td><td><strong>$200M over 3 years</strong> ($50M upfront); AstraZeneca pays Tempus $35M in related SOW; Tempus pays Pathos $35M</td><td>Apr 2025</td><td><a href="https://investors.tempus.com/static-files/226c7191-20aa-4045-ad45-e2c311220aa4" target="_blank" rel="noopener">Tempus 8-K</a></td><td><span class="badge badge-high">High</span></td></tr><tr><td>Anthropic</td><td>Authors class (Bartz et al.)</td><td>Settlement over <strong>pirated</strong> LibGen/PiLiMi books (not a forward license)</td><td><strong>$1.5B</strong> fund; ~$3,000/work gross before fees</td><td>Prelim. approved Sep 2025; final Jul 2026</td><td><a href="https://apnews.com/article/anthropic-copyright-authors-settlement-training-f294266bc79a16ec90d2ddccdf435164" target="_blank" rel="noopener">AP</a>; <a href="https://authorsguild.org/advocacy/artificial-intelligence/what-authors-need-to-know-about-the-anthropic-settlement/" target="_blank" rel="noopener">Authors Guild</a></td><td><span class="badge badge-high">High</span></td></tr><tr><td>Anthropic</td><td>Surge AI</td><td>RLHF / human feedback platform</td><td>Undisclosed</td><td>Ongoing (public case study)</td><td><a href="https://surgehq.ai/blog/anthropic-surge-ai-rlhf-platform-train-llm-assistant-human-feedback" target="_blank" rel="noopener">Surge blog</a></td><td><span class="badge badge-high">High (relationship)</span></td></tr><tr><td>OpenAI / Anthropic / Mag7</td><td>Mercor</td><td>Expert evals, training data, RL environments</td><td>Undisclosed per client; Mercor claims high ARR (secondary — treat growth figures cautiously)</td><td>2023–2026</td><td>Secondary (Big Think Business, Briefs); verify vs primary filings</td><td><span class="badge badge-mixed">Medium (clients) / Low (ARR)</span></td></tr><tr><td>OpenAI (historically)</td><td>Invisible Technologies</td><td>RLHF / advanced trainers for ChatGPT era</td><td>Undisclosed; Invisible reported <strong>$134M</strong> revenue 2024</td><td>2022+</td><td><a href="https://www.businesswire.com/news/home/20250916425748/en/Invisible-Technologies-Raises-%24100-Million-to-Power-the-Next-Generation-of-AI-Infrastructure-for-the-Enterprise" target="_blank" rel="noopener">Invisible BusinessWire</a></td><td><span class="badge badge-medium">Medium</span></td></tr><tr><td>Perplexity</td><td>TIME, Fortune, Der Spiegel, Entrepreneur, Texas Tribune, WordPress.com + later partners</td><td>Citation-tied <strong>ad revenue share</strong> (Publishers Program); later Comet Plus subscription share</td><td>Program: double-digit % of ad rev when cited; Comet Plus pool reported <strong>$42.5M</strong> (80% to pubs) — confirm via Perplexity/CNBC</td><td>Jul 2024+</td><td><a href="https://www.cnbc.com/2024/07/30/perplexity-ai-to-share-revenue-with-publishers-after-plagiarism-accusations.html" target="_blank" rel="noopener">CNBC</a></td><td><span class="badge badge-medium">Medium</span></td></tr><tr><td>Mistral</td><td>AFP</td><td>Real-time + archive grounding for Le Chat (<strong>not</strong> for training, per reporting)</td><td>Undisclosed</td><td>Jan 2025</td><td>Secondary deal maps</td><td><span class="badge badge-medium">Medium</span></td></tr><tr><td>Two large tech cos (unnamed)</td><td>Freepik</td><td>Majority of ~200M-image archive</td><td><strong>2–4¢ per image</strong></td><td>2024 (Reuters interview)</td><td><a href="https://www.reuters.com/technology/inside-big-techs-underground-race-buy-ai-training-data-2024-04-05/" target="_blank" rel="noopener">Reuters</a></td><td><span class="badge badge-medium">Medium</span></td></tr><tr><td>Various</td><td>Defined.ai</td><td>Images, short video, long film, text</td><td>CEO quotes: ~$1–2/image; $2–4 short video; $100–300/hr film; ~$0.001/word text</td><td>2024</td><td>Same Reuters feature</td><td><span class="badge badge-medium">Medium (list prices)</span></td></tr><tr><td>Photobucket (talks)</td><td>Multiple tech cos (unnamed)</td><td>Legacy photo/video archive (~13B assets)</td><td>CEO discussed <strong>5¢–$1/photo</strong>, <strong>&gt;$1/video</strong></td><td>2024 talks</td><td>Same Reuters feature</td><td><span class="badge badge-low">Low (negotiating)</span></td></tr><tr><td>Figure AI</td><td>Creators (Index app) + Brookfield environments</td><td>Human task video for Helix VLA; teleop</td><td>Creators earned <strong>$15M</strong> to date (company claim); Brookfield partnership for real-estate environments</td><td>2025–2026</td><td><a href="https://www.figure.ai/news/introducing-index" target="_blank" rel="noopener">Figure Index</a>; <a href="https://www.figure.ai/news/figure-announces-strategic-partnership-with-brookfield" target="_blank" rel="noopener">Figure–Brookfield</a></td><td><span class="badge badge-medium">Medium (company claims)</span></td></tr><tr><td>Community / NVIDIA</td><td>Open-H-Embodiment</td><td>Surgical/healthcare robotics video+kinematics (~750–778 hrs)</td><td><strong>Open</strong> (CC-BY-4.0) — not a paid license</td><td>Feb–Mar 2026</td><td><a href="https://huggingface.co/datasets/nvidia/PhysicalAI-Robotics-Open-H-Embodiment" target="_blank" rel="noopener">Hugging Face dataset</a>; <a href="https://huggingface.co/blog/nvidia/physical-ai-for-healthcare-robotics" target="_blank" rel="noopener">NVIDIA HF blog</a></td><td><span class="badge badge-high">High</span></td></tr><tr><td>xAI</td><td>X users (public) + partners + contractors</td><td>Posts, engagements, Spaces, Grok interactions; licensed visual; Cursor workflow (4.6)</td><td>Structural / ToS (opt-out); partner $ unknown</td><td>Ongoing; Grok 4.5 summary Jul 2026</td><td><a href="https://media.x.ai/v1/website/public-summary-of-training-content-for-grok-4.5_8jul2026.docx-fc25014a.pdf" target="_blank" rel="noopener">xAI training summary PDF</a></td><td><span class="badge badge-mixed">High (practice) / Unknown ($)</span></td></tr><tr><td>Apple</td><td>Shutterstock</td><td>Millions of images for AI training</td><td>Reported within <strong>$25–50M</strong> initial band</td><td>~2024</td><td>Reuters (via Verge)</td><td><span class="badge badge-medium">Medium</span></td></tr><tr><td>Apple</td><td>Publishers (talks)</td><td>News archives for training</td><td>Reported offers <strong>≥$50M</strong> — <strong>not confirmed closed</strong></td><td>Late 2023–2024 talks</td><td>Secondary (Information/NYT via aggregators)</td><td><span class="badge badge-low">Low</span></td></tr><tr><td>OpenAI</td><td>Getty Images</td><td><strong>Display</strong> partnership in ChatGPT (attribution); <strong>not</strong> training rights</td><td>Undisclosed</td><td>Jun 2026</td><td>Secondary investing analysis — verify IR</td><td><span class="badge badge-medium">Medium</span></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <section class="report-section" id="appendix-b">
+          <button type="button" class="appendix-toggle" data-collapse-toggle aria-expanded="false" aria-controls="appendix-b-body" id="appendix-b-btn">
+            Appendix B — Selected sources
+            <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="appendix-body" id="appendix-b-body" hidden>
+            <div class="sources-list">
+              <h4>Company / SEC / official</h4>
+              <ul>
+                <li><a href="https://investors.newscorp.com/news-releases/news-release-details/news-corp-and-openai-sign-landmark-multi-year-global-partnership" target="_blank" rel="noopener">News Corp–OpenAI partnership release</a> (May 22, 2024)</li>
+                <li><a href="https://openai.com/index/openai-and-reddit-partnership/" target="_blank" rel="noopener">OpenAI–Reddit partnership</a> (May 16, 2024)</li>
+                <li><a href="https://openai.com/index/api-partnership-with-stack-overflow/" target="_blank" rel="noopener">OpenAI–Stack Overflow</a></li>
+                <li><a href="https://openai.com/index/content-partnership-with-financial-times/" target="_blank" rel="noopener">OpenAI–Financial Times</a> (Apr 29, 2024)</li>
+                <li><a href="https://investor.shutterstock.com/news-releases/news-release-details/shutterstock-expands-partnership-openai-signs-new-six-year" target="_blank" rel="noopener">Shutterstock–OpenAI six-year expansion</a> (Jul 11, 2023)</li>
+                <li><a href="https://investors.nytco.com/news-and-events/press-releases/news-details/2025/The-New-York-Times-Company-and-Amazon-Announce-Licensing-Agreement--2025-cYgtzu69ot/default.aspx" target="_blank" rel="noopener">NYT Co.–Amazon licensing release</a> (May 29, 2025)</li>
+                <li><a href="https://investors.tempus.com/static-files/226c7191-20aa-4045-ad45-e2c311220aa4" target="_blank" rel="noopener">Tempus AI Form 8-K (Pathos $200M data license)</a> (Apr 23, 2025)</li>
+                <li><a href="https://media.x.ai/v1/website/public-summary-of-training-content-for-grok-4.5_8jul2026.docx-fc25014a.pdf" target="_blank" rel="noopener">xAI Public Summary of Training Content for Grok 4.5</a> (Jul 2026)</li>
+                <li><a href="https://arxiv.org/pdf/2407.21075" target="_blank" rel="noopener">Apple AFM paper (licensed publisher data)</a> / <a href="https://arxiv.org/html/2507.13575" target="_blank" rel="noopener">2025 update HTML</a></li>
+                <li><a href="https://www.figure.ai/news/introducing-index" target="_blank" rel="noopener">Figure Index announcement</a></li>
+                <li><a href="https://www.figure.ai/news/figure-announces-strategic-partnership-with-brookfield" target="_blank" rel="noopener">Figure–Brookfield partnership</a></li>
+                <li><a href="https://huggingface.co/datasets/nvidia/PhysicalAI-Robotics-Open-H-Embodiment" target="_blank" rel="noopener">NVIDIA Open-H-Embodiment (HF)</a></li>
+                <li><a href="https://www.businesswire.com/news/home/20250916425748/en/Invisible-Technologies-Raises-%24100-Million-to-Power-the-Next-Generation-of-AI-Infrastructure-for-the-Enterprise" target="_blank" rel="noopener">Invisible Technologies $100M raise</a> (Sep 2025)</li>
+                <li><a href="https://joinhandshake.com/blog/our-team/introducing-handshake-ai/" target="_blank" rel="noopener">Handshake AI introduction</a></li>
+                <li><a href="https://support.google.com/youtube/answer/15509945?hl=en" target="_blank" rel="noopener">YouTube third-party training help</a></li>
+              </ul>
+              <h4>Major journalism</h4>
+              <ul>
+                <li><a href="https://www.reuters.com/technology/reddit-ai-content-licensing-deal-with-google-sources-say-2024-02-22/" target="_blank" rel="noopener">Reuters: Reddit–Google ~$60M/yr</a> (Feb 22, 2024)</li>
+                <li><a href="https://www.reuters.com/technology/inside-big-techs-underground-race-buy-ai-training-data-2024-04-05/" target="_blank" rel="noopener">Reuters: Big Tech race to buy training data</a> (Apr 5, 2024)</li>
+                <li><a href="https://apnews.com/article/meta-ai-superintelligence-agi-scale-alexandr-wang-4b55aabf7ea018e38ffdccb66e37cf26" target="_blank" rel="noopener">AP: Meta–Scale $14.3B</a> (Jun 2025)</li>
+                <li><a href="https://apnews.com/article/anthropic-copyright-authors-settlement-training-f294266bc79a16ec90d2ddccdf435164" target="_blank" rel="noopener">AP: Anthropic $1.5B authors settlement</a></li>
+                <li><a href="https://apnews.com/article/openai-news-corp-a49144d381796df5729c746f52fbef19" target="_blank" rel="noopener">AP: News Corp–OpenAI</a></li>
+                <li><a href="https://www.wsj.com/business/media/amazon-to-pay-new-york-times-at-least-20-million-a-year-in-ai-deal-66db8503" target="_blank" rel="noopener">WSJ: Amazon–NYT $20–25M/yr</a></li>
+                <li><a href="https://archive.ph/D51ae" target="_blank" rel="noopener">WSJ: OpenAI–News Corp &gt;$250M / 5 yrs</a> (May 2024)</li>
+                <li><a href="https://www.bloomberg.com/news/articles/2025-07-22/google-seeks-licensing-talks-with-news-groups-following-ai-rivals" target="_blank" rel="noopener">Bloomberg: Google publisher licensing talks</a> (Jul 22, 2025)</li>
+                <li><a href="https://www.cnbc.com/2025/06/19/google-youtube-ai-training-veo-3.html" target="_blank" rel="noopener">CNBC: Google trains Gemini/Veo on YouTube</a> (Jun 19, 2025)</li>
+                <li><a href="https://www.cnbc.com/2024/07/30/perplexity-ai-to-share-revenue-with-publishers-after-plagiarism-accusations.html" target="_blank" rel="noopener">CNBC: Perplexity Publishers Program</a></li>
+                <li><a href="https://www.theverge.com/2024/10/25/24279259/meta-reuters-ai-chatbot-deal-news-licensing-media" target="_blank" rel="noopener">The Verge: Meta–Reuters</a></li>
+                <li><a href="https://www.theverge.com/2024/11/18/24300144/openai-is-paying-dotdash-meredith-at-least-16-million-a-year-to-license-its-content-for-ai" target="_blank" rel="noopener">The Verge: Dotdash ≥$16M/yr</a></li>
+                <li><a href="https://www.adweek.com/media/openai-dotdash-meredith-licensing-payment/" target="_blank" rel="noopener">Adweek: Dotdash / IAC disclosure</a></li>
+                <li><a href="https://www.wired.com/story/google-deal-stackoverflow-ai-giants-pay-for-data/" target="_blank" rel="noopener">WIRED: Google–Stack Overflow</a></li>
+                <li><a href="https://techcrunch.com/2024/02/22/reddit-says-its-made-203m-so-far-licensing-its-data/" target="_blank" rel="noopener">TechCrunch: Reddit $203M contracts</a></li>
+                <li><a href="https://time.com/6247678/openai-chatgpt-kenya-workers/" target="_blank" rel="noopener">TIME: OpenAI/Sama Kenya wages</a></li>
+                <li><a href="https://www.theguardian.com/media/2026/mar/04/news-corp-meta-ai-deal-us50m" target="_blank" rel="noopener">The Guardian: News Corp–Meta / “input company”</a> (Mar 2026)</li>
+                <li><a href="https://www.insidehighered.com/news/faculty/research/2024/07/29/taylor-francis-ai-deal-sets-worrying-precedent" target="_blank" rel="noopener">Inside Higher Ed: Informa–Microsoft</a></li>
+                <li><a href="https://authorsguild.org/advocacy/artificial-intelligence/what-authors-need-to-know-about-the-anthropic-settlement/" target="_blank" rel="noopener">Authors Guild: Bartz settlement FAQ</a></li>
+                <li><a href="https://epoch.ai/publications/will-we-run-out-of-data-limits-of-llm-scaling-based-on-human-generated-data" target="_blank" rel="noopener">Epoch AI: data stock / timing</a></li>
+                <li><a href="https://surgehq.ai/blog/anthropic-surge-ai-rlhf-platform-train-llm-assistant-human-feedback" target="_blank" rel="noopener">Surge AI: Anthropic RLHF case study</a></li>
+              </ul>
+              <h4>Secondary compilations</h4>
+              <ul>
+                <li>LLM Pulse deal maps (OpenAI publisher deals; “every AI content licensing deal 2023–2026”) — useful indexes, not primary for $ figures.</li>
+              </ul>
+            </div>
+            <p class="note" style="margin-top:1.5rem">End of report. Deal figures are sourced, not invented; many commercial terms remain undisclosed.</p>
+          </div>
+        </section>
+
+      </article>
+
+      <footer class="site-footer">
+        <p><strong>Prepared for Andrew Perkins</strong>, WSU Carson College of Business · September 2026</p>
+        <p class="disclaimer">Not legal advice.</p>
+      </footer>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
