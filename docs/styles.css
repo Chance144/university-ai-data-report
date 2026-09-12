@@ -1,5 +1,6 @@
 /* ==========================================================================
-   University AI Data Monetization Report — Academic Professional Theme
+   WSU AI Data Archives Briefing — Academic Professional Theme
+   Tasteful crimson accent; not a brand splash page.
    ========================================================================== */
 
 :root {
@@ -10,10 +11,10 @@
   --ink: #1a2332;
   --ink-secondary: #3d4a5c;
   --ink-muted: #6b7585;
-  --accent: #8b1e3f; /* crimson, WSU-adjacent */
-  --accent-hover: #6e1630;
-  --accent-soft: rgba(139, 30, 63, 0.08);
-  --accent-border: rgba(139, 30, 63, 0.22);
+  --accent: #981e32; /* WSU crimson */
+  --accent-hover: #7a1828;
+  --accent-soft: rgba(152, 30, 50, 0.08);
+  --accent-border: rgba(152, 30, 50, 0.22);
   --thesis-bg: #1a2332;
   --thesis-ink: #f7f5f0;
   --thesis-accent: #e8c4a8;
@@ -88,6 +89,7 @@ a:hover { color: var(--accent-hover); }
   background: rgba(247, 245, 240, 0.92);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border);
+  box-shadow: inset 0 2px 0 var(--accent);
 }
 
 .brand {
@@ -111,7 +113,7 @@ a:hover { color: var(--accent-hover); }
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: min(42vw, 320px);
+  max-width: min(48vw, 360px);
 }
 
 .nav-toggle {
@@ -209,11 +211,20 @@ a:hover { color: var(--accent-hover); }
 }
 .hero-meta strong { color: var(--ink-secondary); font-weight: 600; }
 
+.hero-eyebrow {
+  margin: 0 0 0.85rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
 .hero h1 {
   margin: 0 0 0.5rem;
-  max-width: 24ch;
+  max-width: 34ch;
   font-family: var(--font-serif);
-  font-size: clamp(1.85rem, 4vw, 2.55rem);
+  font-size: clamp(1.75rem, 3.6vw, 2.4rem);
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -0.02em;
@@ -263,6 +274,52 @@ a:hover { color: var(--accent-hover); }
   font-weight: 500;
 }
 .thesis strong { color: var(--thesis-accent); font-weight: 700; }
+
+/* ========== WSU holdings (central, not an aside) ========== */
+.holdings-section > h2 {
+  border-bottom-color: var(--accent);
+}
+
+.holdings-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1.5rem 0 0;
+  max-width: 52rem;
+}
+
+.holding {
+  margin: 0;
+  padding: 1.15rem 1.25rem;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--accent);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+}
+
+.holding h3 {
+  margin: 0 0 0.2rem;
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 650;
+  color: var(--ink);
+}
+
+.holding-place {
+  margin: 0 0 0.65rem;
+  font-size: 0.78rem;
+  font-weight: 650;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.holding p {
+  margin: 0;
+  font-size: 0.95rem;
+  max-width: none;
+}
 
 /* ========== Sections ========== */
 section.report-section {
@@ -610,6 +667,7 @@ td a { word-break: break-word; }
   .nav-toggle { display: inline-flex; align-items: center; gap: 0.35rem; }
   .brand-title { max-width: min(55vw, 280px); }
   .do-dont { grid-template-columns: 1fr; }
+  .holdings-grid { grid-template-columns: 1fr; }
   .main { padding: 1.5rem 1rem 3rem; }
 }
 
